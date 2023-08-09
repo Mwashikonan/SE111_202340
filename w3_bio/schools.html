@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanya Konan" >
+    <meta name="description" content="W3 Bio Assignment">
+
+    <!--Tanya Konan | SE111.02 | 08/07/23-->
+
+    <title>Week 3 | Multi Page Bio</title>
+
+    <style>
+
+        body{
+
+            border: 5px solid violet;
+            background-color: rgb(255, 212, 158);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        div {
+            
+            padding: 15px;
+            margin: 25px;
+
+        }
+
+        #wrapper {
+
+            border:  4px solid whitesmoke;
+            padding-bottom: 2.5rem; 
+
+        }
+
+        #header {
+
+            text-align: center;
+        }
+
+        .bg {
+
+            color: brown;
+        }
+
+        #nav {
+            
+            border: 10px solid violet;
+            text-align: center;
+            background-color: violet;
+            padding: 15px;
+            margin: auto;
+
+        }
+
+        #nav a {
+
+            border: 3px solid rgb(194, 194, 194); 
+            background-color:rgb(194, 194, 194);
+            float: center;
+            text-align: center;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 17px;
+
+        }
+       
+        #footer {
+
+            color: brown;
+            text-align: center;
+            background-color: violet;
+            margin: auto;
+            padding: 10px;
+            font-size: 17px;
+
+        }
+
+        .imged {
+
+            margin: 10px;
+            float: right;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .clearfix::after {
+
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+
+        #schools {
+
+            color: brown;
+        }
+
+        #prim , #sec , #college {
+
+            border: 4px solid whitesmoke;
+            background-color: violet;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--Wrapper-->
+    <div id="wrapper">
+
+        <!--Header-->
+        <div id="header" class = bg>
+
+            <h1>
+            
+            <img src="images/bio pics/IMG_6279.jpeg" alt="Toni K" style="width: 200px;">
+
+            <span style='font-size:45px;'>&#10024;</span>
+
+            Tanya "Toni" Konan | About my life
+
+            <span style='font-size:45px;'>&#10024;</span>
+
+            <img src="images/bio pics/IMG_6282.jpeg" alt="2nd Toni K " style="width: 200px;">
+
+            </h1>
+            
+        </div><!--#header-->
+
+        <hr>
+
+        <!--Navigation (nav)-->
+        <div id="nav">
+            
+            
+            <a href="index.html"> HOME PAGE</a>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+           
+            <a href="schools.html">
+            MY EDUCATION</a>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+           
+
+            <a href="hobbies.html">
+            MY HOBBIES</a>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <a href="#footer">
+            BOTTOM OF PAGE</a>
+
+        </div><!--#nav-->
+
+        <hr>
+        <br>
+
+        <!--PAGE CONTENT-->
+        <div id="content">
+
+            <!--SCHOOLS-->
+            <div id="schools">
+
+                <h2 style="text-align:center">
+
+                    &bull;<u>My Education (so far)</u>&bull;
+
+                </h2>
+
+                <!--Added links to schools-->
+
+                <!--PRIMARY SCHOOLS-->
+                <div id="prim" class="clearfix">
+
+                    <h4>
+
+                        <u>Primary/Elementary School</u>
+
+                    </h4>
+
+                    <ol>
+
+                        <li style="color: rgb(219, 0, 44);">
+
+                            St 
+                            <a href="https://www.staugustinesri.com/" target="_blank">Augustine</a>
+                            school
+
+                            <br>
+
+                            <i><b style="color: black;">1st & 2nd Grade</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li style="color: green;">
+
+                            Canon Andrea Mwaka School 
+                            (
+                            <a href="https://dodomacams.org/" target="_blank">CAMS</a>
+                            )
+
+                            <br>
+
+                            <i><b style="color: black;">Standard 3 ~ 7 (3rd ~ 7th Grade)</b></i>
+
+                        </li>
+
+                        <img class="imged" src="images/schools pics/staug.jpeg" alt="saint aug">
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <img class="imged" src="images/schools pics/cams.jpeg" alt="cams">
+
+                    </ol>
+
+                </div><!--#prim-->
+
+                <!--SECONDARY SCHOOL-->
+                <div id="sec" class="clearfix">
+
+                    <h4>
+
+                        <u>Secondary/High School</u>
+
+                    </h4>
+
+                    <ol>
+
+                        <li style="color: green;">
+
+                            Canon Andrea Mwaka School 
+                            (
+                            <a href="https://dodomacams.org/" target="_blank">CAMS</a>
+                            )
+
+                            <br>
+
+                            <i><b style="color: black;">Form 1 (HS Freshman year)</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li style="color: navy;">
+
+                            Academic International Secondary School 
+                            (
+                            <a href="https://www.daracademic.com/secondary-school/" target="_blank">AISS</a>
+                            )
+
+                            <br>
+
+                            <i><b style="color: black;">Form 1 (repeated) ~ Form 3
+
+                            <br>
+                            
+                            (HS Freshman to Junior year)</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li style="color: rgb(74, 47, 126);">
+
+                            <a href="https://kleincain.kleinisd.net/" target="_blank">Klein</a>
+                            Cain High School
+
+                            <br>
+
+                            <i><b style="color: black;">HS Senior year</b></i>
+
+                        </li>
+
+                        <img class="imged" src="images/schools pics/aiss.jpeg" alt="aiss">
+
+                        <img class="imged" src="images/schools pics/cain.jpeg" alt="cain">
+
+                    </ol>
+
+                </div><!--#sec--> 
+
+                <!--COLLEGE-->
+                <div id="college" class="clearfix">
+
+                    <h4>
+
+                        <u>College</u>
+
+                    </h4>
+
+                    <ol>
+
+                        <li style="color: rgb(0, 45, 98)">
+
+                            New England Institute of Technology 
+                            (
+                            <a href="https://www.neit.edu/" target="_blank">NEIT</a>
+                            )
+
+                            <br>
+
+                            <i><b style="color: black;">Currently attending</b></i>
+
+                            <img class="imged" src="images/schools pics/neit.jpeg" alt="neit">
+
+                        </li>
+
+                    </ol>
+
+                </div> 
+
+            </div><!--#schools-->
+
+        </div><!--#content-->
+
+        <hr>
+
+        <!--FOOTER-->
+        <div id="footer" class="bg">
+
+            <h4> &copy; Summer 2023 [202340] | SE111 - HTML & Javascript Class | T Konan</h4>
+
+            <a href="#header">Back to Top</a>
+
+        </div><!--#footer-->
+
+        <hr>
+
+    </div><!--#wrapper-->
+    
+</body>
+
+</html>
