@@ -9,8 +9,250 @@
 
     <title>Week 4 | Movie Site</title>
 
+    <style>
+
+        @font-face {
+
+            font-family: inception;
+            src: url(fonts/Inception.ttf);
+
+        }
+
+        body {
+
+            background-image: url('images/background_img.jpeg');
+
+        }
+
+        #wrapper{
+
+            border: 5px solid rgba(0, 0, 0, 0.666) ;
+            color: rgb(199, 199, 199);
+            background-color: rgba(0, 0, 0, 0.666);
+            margin: 3%;
+            padding: 10%;
+            box-shadow:0 0 10px rgb(114, 114, 114);
+
+
+        }
+
+        #header{
+
+            text-align: center;
+            font-family: inception;
+            font-size: 25px;
+
+        }
+
+        #nav {
+
+            list-style-type: none;
+            margin:0;
+            padding: 1%;
+
+            overflow: hidden;
+            background-color: rgba(19, 75, 95, 0.666);
+            text-align: center;
+            
+        }
+
+        .linkleft{
+
+            width:100px;
+            height:40px;
+            margin-left:17px;
+            margin-right:17px;
+
+            text-decoration: none;
+            font-size:17px;
+            text-align:center;
+
+            float: left;
+            line-height:40px;
+            color:white;
+
+            box-shadow:0 0 8px black;
+            background-color:rgba(88, 95, 95, 0.555);
+
+        }
+
+        .linkright{
+
+            width:100px;
+            height:40px;
+            margin-left:17px;
+            margin-right:17px;
+
+            text-decoration: none;
+            font-size:17px;
+            text-align:center;
+
+            float: right;
+            line-height:40px;
+            color:white;
+
+            box-shadow:0 0 8px black;
+            background-color:rgba(88, 95, 95,0.555);
+        }
+
+        #active{
+
+            background-color: rgb(172, 188, 188, 1) ;
+            color: black;
+            box-shadow:0 0 0;
+        }
+
+        .linkleft:hover{
+
+            background-color: brown;
+            color: azure;
+
+        }
+
+        .linkright:hover{
+
+            background-color: brown;
+            color: azure;
+
+        }
+
+        h2{
+
+            font-family: inception;
+            font-size: 20px;
+            text-align: center;
+        
+        }
+
+        .center{
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+        
+        #ratings {
+
+            text-align: center;
+            font-size: 17px;
+            padding-bottom: 23px;
+
+        }
+
+        .ratesdown{
+            
+            width: 100px;
+            border-radius: 10px;
+            height: 20px;
+            margin-left:15px;
+            margin-right:15px;
+            background-color: rgba(99, 99, 99, 0.886);
+            color: azure;
+        }
+
+    </style>
+
 </head>
 <body>
+
+    <!--WRAPPER-->
+    <div id="wrapper">
+
+        <hr>
+
+        <!--HEADER-->
+        <div id="header">
+
+            <p id=""></p>
+
+            <h1><em>I&nbsp;N&nbsp;C&nbsp;E&nbsp;P&nbsp;T&nbsp;I&nbsp;O&nbsp;N</em></h1>
+
+            <h4><b>A DREAM WITHIN A DREAM</b></h4>
+
+        </div><!--#header-->
+
+        <br>
+        <hr>
+
+        <!--NAVIGATION-->
+        <div id="nav">
+
+            <!--NAV-BUTTONS-->
+
+            <a href="index.html" id="active" class="linkleft" title="HOME">HOME</a>
+
+            <a href="cast.html" class="linkleft" title="CAST">CAST</a>
+
+            <a href="review.html" class="linkleft" title="REVIEW">REVIEW</a>
+
+            <a href="#footer" class="linkright" title="BOTTOM PAGE">BOTTOM PAGE</a>
+
+        </div><!--#nav-->
+
+        <hr>
+        <br>
+
+        <!--CONTENT-->
+        <div id="content">
+
+            <!--section header [which page we're currently on]-->
+
+            <h2><b>ABOUT</b> <em>I&nbsp;N&nbsp;C&nbsp;E&nbsp;P&nbsp;T&nbsp;I&nbsp;O&nbsp;N</em></h2>
+
+            <p>A brief introduction to/overview of the movie <em>Empire Records</em></p>
+
+            <img src="images/movie poster.jpeg" alt="Inception movie poster, 2010"
+            title="A Dream Within A Dream" class="center">
+
+            <br>
+
+            <!--this is where i put the rating,movie length, release date-->
+            <p id="ratings">
+
+                <!--"ratesdown" is the id "ratings" below the movie poster-->
+
+                <b title="Release Date" class="ratesdown">2010</b>
+
+                |
+
+                <b title="Parental Guidance" class="ratesdown">PG13</b>
+
+                |
+
+                <b title="Movie Duration" class="ratesdown">2h 28m</b>
+
+            </p><!--ratings-->
+
+
+        </div><!--#content-->
+
+        <hr>
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <!--link back to the top-->
+
+            <a href="#header">| Back to top! |</a>
+
+            <p>&copy; T Konan | SE111 | 202340</p>
+
+            <br>
+            <br>
+            <br>
+
+            <!--image of validation screenshot-->
+
+            <!--
+            <img src="" alt="Validation of _____ page">
+            -->
+
+        </div><!--#footer-->
+
+
+    </div><!--#wrapper-->
     
 </body>
 </html>
