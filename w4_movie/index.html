@@ -7,7 +7,7 @@
     <meta name="author" content="Tanya Konan">
     <meta name="description" content="W4 Movie Site">
 
-    <title>Week 4 | Movie Site</title>
+    <title>&#10024; INCEPTION | HOME</title>
 
     <style>
 
@@ -61,16 +61,16 @@
             width:100px;
             height:40px;
             margin-left:17px;
-            margin-right:17px;
 
+            margin-right:17px;
             text-decoration: none;
             font-size:17px;
-            text-align:center;
 
+            text-align:center;
             float: left;
             line-height:40px;
-            color:white;
 
+            color:white;
             box-shadow:0 0 8px black;
             background-color:rgba(88, 95, 95, 0.555);
 
@@ -81,16 +81,16 @@
             width:100px;
             height:40px;
             margin-left:17px;
-            margin-right:17px;
 
+            margin-right:17px;
             text-decoration: none;
             font-size:17px;
-            text-align:center;
 
+            text-align:center;
             float: right;
             line-height:40px;
-            color:white;
 
+            color:white;
             box-shadow:0 0 8px black;
             background-color:rgba(88, 95, 95,0.555);
         }
@@ -136,25 +136,73 @@
         #ratings {
 
             text-align: center;
-            font-size: 17px;
+            font-size: 13px;
             padding-bottom: 23px;
 
         }
 
-        .ratesdown{
+        .info{
             
             width: 100px;
             border-radius: 10px;
             height: 20px;
+            padding: 5px 5px;
+
             margin-left:15px;
             margin-right:15px;
             background-color: rgba(99, 99, 99, 0.886);
             color: azure;
         }
 
+        #footer{
+
+            background-color: rgba(19, 75, 95, 0.666);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color:white;
+
+        }
+
+        .link{
+
+            width:100px;
+            height:40px;
+            margin-left:17px;
+
+            margin-right:17px;
+            text-decoration: none;
+            font-size:17px;
+
+            text-align:center;
+            padding: 10px 14px;
+            line-height:50px;
+
+            box-shadow:0 0 8px black;
+            background-color:rgba(88, 95, 95,0.555);
+            color:white;
+
+        }
+
+        .link:hover{
+
+            background-color: brown;
+            color: azure;
+
+        }
+
+        #valid{
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+
+        }
+
     </style>
 
 </head>
+
 <body>
 
     <!--WRAPPER-->
@@ -165,9 +213,11 @@
         <!--HEADER-->
         <div id="header">
 
-            <p id=""></p>
+            <h1><em style="color: rgb(231, 32, 35);">
 
-            <h1><em>I&nbsp;N&nbsp;C&nbsp;E&nbsp;P&nbsp;T&nbsp;I&nbsp;O&nbsp;N</em></h1>
+            I&nbsp;N&nbsp;C&nbsp;E&nbsp;P&nbsp;T&nbsp;I&nbsp;O&nbsp;N
+
+            </em></h1>
 
             <h4><b>A DREAM WITHIN A DREAM</b></h4>
 
@@ -201,27 +251,64 @@
 
             <h2><b>ABOUT</b> <em>I&nbsp;N&nbsp;C&nbsp;E&nbsp;P&nbsp;T&nbsp;I&nbsp;O&nbsp;N</em></h2>
 
-            <p>A brief introduction to/overview of the movie <em>Empire Records</em></p>
+            <p style="color:azure; font-size: 17px">
 
-            <img src="images/movie poster.jpeg" alt="Inception movie poster, 2010"
-            title="A Dream Within A Dream" class="center">
+                <em style="font-family: inception;">Inception</em> 
+                is a 2010 sci-fi adventure, where dream-sharing technology exists in the world. Cobb 
+                <strong>(Leonardo DiCaprio)</strong> learned to take advantage of this by stealing secrets from powerful 
+                corporations. After many misfortunes, he puts together a team to do one last job to get back home.
+                But this last dream was nothing they were expecting. Will Cobb and his team 
+                finish this job and get to go home?
+
+            </p>
 
             <br>
+
+            <p title="Genres" style="text-align: center; font-size:13px">
+
+                <b class="info">Action</b>
+
+                &bull;
+
+                <b class="info">Adventure</b>
+
+                &bull;
+
+                <b class="info">Sci-fi</b>
+                
+            </p>
+
+            <img src="images/movie_poster.jpeg" alt="Inception movie poster, 2010" 
+            title="A Dream Within A Dream" class="center">
 
             <!--this is where i put the rating,movie length, release date-->
             <p id="ratings">
 
-                <!--"ratesdown" is the id "ratings" below the movie poster-->
+                <!--"info" is the id "ratings" below the movie poster-->
 
-                <b title="Release Date" class="ratesdown">2010</b>
+                <b title="Release Date" class="info">2010</b>
 
-                |
+                &bull;
 
-                <b title="Parental Guidance" class="ratesdown">PG13</b>
+                <b title="Parental Guidance" class="info">PG13</b>
 
-                |
+                &bull;
 
-                <b title="Movie Duration" class="ratesdown">2h 28m</b>
+                <b title="Movie Duration" class="info">2h 28m</b>
+
+                <br>
+                <br>
+
+                <b class="info" title="Production Company">Warner Bros.</b>
+
+                &bull;
+
+                <b class="info" title="Production Company">Legendary Entertainment</b>
+
+                &bull;
+
+                <b class="info" title="Production Company">Syncopy</b>
+
 
             </p><!--ratings-->
 
@@ -235,19 +322,16 @@
 
             <!--link back to the top-->
 
-            <a href="#header">| Back to top! |</a>
+            <a href="#header" class="link"> Back to Top </a>
 
             <p>&copy; T Konan | SE111 | 202340</p>
 
             <br>
-            <br>
-            <br>
 
             <!--image of validation screenshot-->
 
-            <!--
-            <img src="" alt="Validation of _____ page">
-            -->
+            
+            <img src="images/validation/valid_home.png" alt="Validation of home page" id="valid">
 
         </div><!--#footer-->
 
@@ -255,4 +339,5 @@
     </div><!--#wrapper-->
     
 </body>
+
 </html>
