@@ -6,7 +6,7 @@
     <meta name="author" content="Tanya Konan">
     <meta name="description" content="W4 Movie Site">
 
-    <title>&#10024; INCEPTION | HOME</title>
+    <title>&#10024; INCEPTION | CAST</title>
 
     <style>
 
@@ -169,11 +169,13 @@
 
         .character{
 
+            width: 135px;
+            height: 165px;
             margin-left: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 8px black;
 
-            padding: 10px 14px;
+            box-shadow: 0 0 8px black;
+            padding: 14px 14px;
             background-color: rgba(118, 117, 117, 0.666) ;
             display: inline-block;
 
@@ -185,6 +187,20 @@
 
         }
 
+        .special {
+            position:relative;
+            top:20px;
+        }
+
+        #valid{
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+            height: 55%;
+
+        }
         
 
     </style>
@@ -242,13 +258,15 @@
 
             </h2>
 
+            <br>
             <hr>
+            <br>
 
             <!--THE PEOPLE ON THE PROJECT ie MOVIE-->
             <div id="production">
 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Leonardo DiCaprio">
 
                     <h3><b>Cobb</b></h3>
 
@@ -260,8 +278,9 @@
 
 
 
+
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character special" title="Joseph Gordon-Levitt">
 
                     <h3><b>Arthur</b></h3>
 
@@ -272,9 +291,10 @@
                 </div><!--/ .character -->
 
 
+
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Elliot Page">
 
                     <h3><b>Ariadne</b></h3>
 
@@ -286,10 +306,15 @@
 
 
                 
-                <!--THE CHARACTERS-->
-                <div class="character">
 
-                   
+                <!--THE CHARACTERS-->
+                <div class="character" title="Ken Watanabe">
+
+                    <h3><b>Saito</b></h3>
+
+                    <img src="images/headshots/ken_saito.webp" alt="Ken Watanabe headshot">
+
+                    <p>Ken Watanabe</p>
 
                 </div><!--/ .character -->
 
@@ -297,56 +322,117 @@
 
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Tom Hardy">
 
-                   
+                    <h3><b>Eames</b></h3>
+
+                    <img src="images/headshots/tom_eames.jpeg" alt="Tom Hardy headshot">
+
+                    <p>Tom Hardy</p>
 
                 </div><!--/ .character -->
 
-                <hr>
+                <br>
+                <br>
+                <br>
                 <br>
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Dileep Rao">
 
-                   
+                    <h3><b>Yusuf</b></h3>
+
+                    <img src="images/headshots/dileep_yusef.jpeg" alt="Dileep Rao headshot">
+
+                    <p>Dileep Rao</p>
 
                 </div><!--/ .character -->
+
+
+
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Marion Cotillard">
 
-                   
+                    <h3><b>Mal</b></h3>
+
+                    <img src="images/headshots/marion_mal.jpeg" alt="Marion Cotillard headshot">
+
+                    <p>Marion Cotillard</p>
 
                 </div><!--/ .character -->
+
+
+
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character" title="Cillan Murphy">
 
-                   
+                    <h3><b>Robert Fischer</b></h3>
+
+                    <img src="images/headshots/Cillian_Fischer.jpeg" alt="Cillan Murphy headshot">
+
+                    <p>Cillan Murphy</p>
 
                 </div><!--/ .character -->
+
+
+
                 
                 <!--THE CHARACTERS-->
-                <div class="character">
+                <div class="character special" title="Michael Caine">
 
-                   
+                    <h3><b>Prof. Stephen Miles</b></h3>
+
+                    <img src="images/headshots/michael_prof-stephen.jpeg" alt="Michael Caine headshot">
+
+                    <p>Michael Caine</p>
 
                 </div><!--/ .character -->
+
+                <br>
+                <br>
+                <hr>
+                <br>
+
+                <!--DIRECTOR AND PRODUCER-->
+                <div id="direct">
+
+                    <h2>
+
+                        D&nbsp;I&nbsp;R&nbsp;E&nbsp;C&nbsp;T&nbsp;O&nbsp;R &nbsp; & &nbsp; 
+                        P&nbsp;R&nbsp;O&nbsp;D&nbsp;U&nbsp;C&nbsp;E&nbsp;R
+
+                    </h2>
+
+
                 
-                <!--THE CHARACTERS-->
-                <div class="character">
+                    <!--THE CHARACTERS-->
+                    <div class="character" title="Christopher Nolan">
 
-                   
+                        <h3><b>Director, Writer, & Producer</b></h3>
 
-                </div><!--/ .character -->
-                
-                <!--THE CHARACTERS-->
-                <div class="character">
+                        <img src="images/headshots/Chis_direct.jpeg" alt="Christopher Nolan headshot">
 
-                   
+                        <p>Christopher Nolan</p>
 
-                </div><!--/ .character -->
+                    </div><!--/ .character -->
+                    
+                    <!--THE CHARACTERS-->
+                    <div class="character" title="Emma Thomas Nolan">
+
+                        <h3><b>Producer</b></h3>
+
+                        <img src="images/headshots/emma_produce.jpeg" alt="Emma Thomas Nolan headshot">
+
+                        <p>Emma Thomas Nolan</p>
+
+                    </div><!--/ .character -->
+
+                    <br>
+                    <br>
+
+                </div><!--#direct-->
 
             </div><!--#production-->
 
@@ -360,7 +446,7 @@
 
             <!--link back to the top-->
 
-            <a href="#header" class="link"> Back to Top </a>
+            <a href="#header" class="link" title="Back to Top"> Back to Top </a>
 
             <p>&copy; T Konan | SE111 | 202340</p>
 
@@ -368,9 +454,8 @@
 
             <!--image of validation screenshot-->
 
-            <!--
-            <img src="" alt="Validation of _____ page">
-            -->
+            <img src="images/validation/valid_cast.png" alt="Validation of cast page" id="valid" title="Validation">
+        
 
         </div><!--#footer-->
 
