@@ -8,15 +8,474 @@
     <meta name="author" content="Tanya Konan">
     <meta name="description" content="Default HTML Page for SE 111">
     
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 
     <title>Week 5 | Tables and Forms</title>
 
 </head>
 
 <body>
-    <!--Build your Table and Form here-->
-    
+
+    <!--WRAPPER-->
+    <div id="wrapper">
+
+        <hr>
+
+        <!--HEADER-->
+        <div id="header">
+
+            <h1><strong>B&nbsp;i&nbsp;r&nbsp;t&nbsp;h&nbsp;d&nbsp;a&nbsp;y &nbsp; R&nbsp;e&nbsp;g&nbsp;i&nbsp;s&nbsp;t&nbsp;r&nbsp;a&nbsp;t&nbsp;i&nbsp;o&nbsp;n 
+            &nbsp; F&nbsp;o&nbsp;r&nbsp;m</strong></h1>
+
+            <h2><b><i>W&nbsp;E&nbsp;L&nbsp;C&nbsp;O&nbsp;M&nbsp;E &nbsp; T&nbsp;O &nbsp; T&nbsp;H&nbsp;E &nbsp; 
+            P&nbsp;A&nbsp;R&nbsp;T&nbsp;Y&nbsp;!&nbsp;!</i></b></h2>
+
+        </div><!--#header-->
+
+        <br>
+        <hr>
+        <br>
+
+        <!--BOTTOM OF PAGE-->
+        <div id="bottom">
+
+            <a href="#footer" class="link" title="Bottom of Page">Bottom of Page</a>
+
+        </div><!--#bottom-->
+
+        <br>
+        <hr>
+        <br>
+
+        <!--THE CONTENT-->
+        <div id="content">
+
+            <form method="get" action="confirm.html">
+
+                <!--Build your Table and Form here-->
+                <table>
+
+                    <th><!--TABLE HEAD-->
+                        
+                        <tr><!--rows-->
+
+                            <!--columns-->
+
+                            <td><!--left columns-->
+
+                                <h2>Labels</h2>
+
+                            </td>
+
+                            <td><!--right columns-->
+
+
+                                <h2>Form Fields</h2>
+
+
+                            </td>
+
+                        </tr>
+                    </th>
+
+                    <tbody>
+
+                        <tr><!--table row [gfirst]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="gfirst">Parent/Guardian Name: </label>
+        
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <input type="text" name="gfirst" id="g_first" maxlength="20" 
+                                placeholder="First Name" required>
+
+                                <br>
+
+                                <input type="text" name="gfirst" id="g_last" maxlength="20" 
+                                placeholder="Last Name" required> 
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [cfirst]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="cfirst">Child's Full Name: </label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+        
+                                <br>
+
+                                <input type="text" name="cfirst" id="c_first" placeholder="Child's First Name" required>
+
+                                <br>
+
+                                <input type="text" name="cfirst" id="c_last" placeholder="Child's Last Name" required>
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [age]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="age">Child's Age</label>
+        
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+        
+                                <br>
+
+                                <input type="number" name="age" value="3" style="text-align: center;" required>
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [date_time]-->
+
+                            <!--left column [labels]-->
+
+                            <td class ="special">
+        
+                                <label for= "date_time"><b>Date and Time</b></label>
+                                
+                            </td>
+                           
+                            <!--right column [inputs] is gone-->
+                            <td>
+         
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [date]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="date">Date</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <input type="date" name="date" required>
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [time]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="time">Start Time</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <input type="time" name="time" required>
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [guests]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="guests">Number of Guests</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <input type="number" name="guests" value="5" style="text-align: center;">
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [food]-->
+
+                            <!--left column [labels]-->
+
+                            <td class="special">
+        
+                                <label for="food"><b>Food</b></label>
+                                
+                            </td>
+                            
+                            <!--right column [inputs] is gone-->
+                            <td>
+        
+                                
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [size]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="size">Size</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+                                
+                                <br>
+
+                                <input type="radio" name="size" value="sm">Small
+
+                                
+
+                                <input type="radio" name="size" value="md">Medium
+
+                                
+
+                                <input type="radio" name="size" value="lg">Large
+
+                                <br>
+            
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [drinks]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="drinks">Drinks</label>
+        
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <input type="checkbox" name="drink" checked="true" value="coke">Coke
+
+                                <label for="drink1">Coke</label>
+
+                                <br>
+
+                                <input type="checkbox" name="drink" value="sprite">
+
+                                <label for="drink2">Sprite</label>
+
+                                <br>
+
+                                <input type="checkbox" name="drink" value="fruit punch">
+
+                                <label for="drink3">fruit punch</label>
+
+                                <br>
+
+                                <input type="checkbox" name="drink" value="lemonade">
+
+                                <label for="drink4">lemonade</label>
+                                    
+                                <br>
+
+                                <input type="checkbox" name="drink" value="iced tea">
+
+                                <label for="drink5">iced tea</label>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [cake]-->
+
+                            <!--left column [labels]-->
+                            <td>
+
+                                <label for="cake">Cake</label>
+
+                            </td>
+
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+
+                                <select name="cake">
+
+                                    <option value="chocolate">Chocolate</option>
+
+                                    <option value="vanilla" selected>Vanilla</option>
+
+                                    <option value="yourown">Bring Your Own</option>
+
+                                </select>
+
+                                <br>
+                                
+                            </td>
+
+                        </tr>
+
+                        <tr><!--table row [decor]-->
+
+                            <!--left column [labels]-->
+
+                            <td class="special">
+        
+                                <label for="decor"><b>Decorations</b></label>
+                                
+                            </td>
+        
+                            <!--right column [inputs] is gone-->
+                            <td>
+        
+                                
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [colors]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="colors">Color Scheme</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+                                <p>Choose a color scheme</p>
+
+                                <br>
+
+                                <input type="color" name="colors">
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [comments]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+                                <label for="comments">Additional Comments</label>
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td>
+
+                                <br>
+        
+                                <textarea name="comments" placeholder="Please add any additional comments"></textarea>
+
+                                <br>
+                                
+                            </td>
+        
+                        </tr>
+
+                        <tr><!--table row [submit]-->
+
+                            <!--left column [labels]-->
+                            <td>
+        
+        
+                            </td>
+        
+                            <!--right column [inputs]-->
+                            <td class="special">
+        
+                                <input type="submit" value="Submit">
+                                
+                            </td>
+        
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </form>
+
+        </div><!--#content-->
+
+        <br>
+        <hr>
+        <br>
+
+        <div id="footer">
+
+            <br>
+
+            <p>&copy; T Konan | SE111 | 202340</p>
+
+            <br>
+
+            <!--link back to the top-->
+
+            <a href="#header" class="link" title="Back to Top"> Back to Top </a>
+
+            <br>
+
+        </div>
+
+    </div><!--#wrapper-->
+
 </body>
 
 </html>
