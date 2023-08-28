@@ -26,9 +26,19 @@
             background-color: rgba(0, 0, 0, 0.666);
 
             margin: 5%;
-            padding: 15%;
+            padding: 10%;
             box-shadow:0 0 10px rgb(114, 114, 114);
 
+        }
+
+        #footer{
+  
+            background-color: rgba(85, 89, 141, 0.666);
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 10px;
+            font-size: 17px;
+          
         }
 
         
@@ -49,7 +59,7 @@
 
             <br>
 
-            <h4 style="font-family: ariel; font-size: 15px;">Uncle Sam wants <b><i>YOU</i></b> to pay up</h4>
+            <h4 style="font-family: ariel; font-size: 15px;">Uncle Sam wants <b><i>YOU</i></b> to pay up!!!</h4>
         
         </div><!--#header-->
 
@@ -73,15 +83,36 @@
 
             var netPay = grossPay - uncleSamPay
 
+            alert(` Here is the following information:-\n
+            The Gross Pay: ${grossPay.toFixed(2)}
+            Uncle Sam's Share: ${uncleSamPay.toFixed(2)}
+            The Net Pay: ${netPay.toFixed(2)}\n\nThank you for the information provided. Have a good day!`)
+
             console.log(`The Gross Pay: ${grossPay.toFixed(2)} `)
 
             console.log(`Uncle Sam's Share: ${uncleSamPay.toFixed(2)} `)
 
             console.log(`The Net Pay: ${netPay.toFixed(2)} `)
 
-            alert(`Thank you for the information provided\nHave a good day!`)
-
         </script>
+
+        <br>
+        <hr>
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <br>
+
+            <p>&copy; T Konan | SE111 | 202340</p>
+
+            <br>
+
+            <!--link back to the top-->
+
+            <br>
+
+        </div>
 
     </div><!--#wrapper-->
     
