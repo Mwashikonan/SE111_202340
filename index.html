@@ -14,19 +14,15 @@
 
         body{
 
-            background-image: url(images/IMG_2437.JPG) ;
+            background-image: url(images/brown_heart.jpeg) ;
+            /*
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            */
 
         }
 
-        div {
-            
-            padding: 15px;
-            margin: 25px;
-
-        }
 
         #work {
 
@@ -36,9 +32,12 @@
 
         #wrapper {
 
-            border:  4px solid rgb(112, 55, 1) ;
+            border:  10px solid rgb(112, 55, 1) ;
+            background-color: rgba(112, 55, 1, 0.777) ;
             color: rgb(207, 167, 110) ;
-            padding-bottom: 2.5rem; 
+            margin: 5%;
+            padding: 10%;
+            border-radius: 25px;
 
         }
 
@@ -48,39 +47,88 @@
         }
 
         #nav {
-            
-            border: 4px solid rgb(156, 79, 8);
-            text-align: center;
-            background-color: rgb(156, 79, 8);
-            padding: 15px;
-            margin: auto;
 
+            list-style-type: none;
+            margin:0;
+            padding: 1%;
+
+            overflow: hidden;
+            background-color: rgba(156, 80, 8, 0.777);
+            text-align: center;
+            
         }
 
-        #nav a {
+        #link{
 
-            border: 3px solid rgb(176, 140, 119); 
-            background-color: rgb(176, 140, 119); 
-            text-align: center;
-            padding: 5px 10px;
+            width:100px;
+            height:40px;
+            margin-left:17px;
+
+            margin-right:17px;
             text-decoration: none;
-            font-size: 17px;
+            font-size:17px;
+
+            text-align:center;
+            padding: 10px 14px;
+            line-height:50px;
+
+            box-shadow:0 0 8px black;
+            background-color:rgb(176, 140, 119);
+            color:rgb(63, 29, 11);
+            border-radius: 15px;
 
         }
 
-        #w1 , #w2 , #w3 , #w4, #w5, #w6{
+        #link:hover{
 
-            border: 3px solid rgb(156, 79, 8);
-            background-color: rgb(156, 79, 8);
+            background-image: url(images/background_brown_hearts.jpeg);
+            color:rgb(69, 46, 33);
+
+        }
+
+        /*
+        .special{
+
+            position: relative;
+            bottom: 19px;
+        }
+        */
+
+        .inbordy{
+
+            border: 3px solid rgb(75, 26, 3, 1);
+            background-color: rgba(75, 26, 3, 0.666);
+            border-radius: 15px;
             
         }
 
+        .bordy{
+
+            border:  10px solid rgb(207, 167, 110) ;
+            background-color: rgba(207, 167, 110, 0.666) ;
+            color: rgb(207, 167, 110) ;
+            margin: 1%;
+            padding: 5%;
+
+        }
+
+        .link2{
+
+            color: rgb(207, 167, 110) ;
+
+        }
+
+        .link2:hover{
+
+            color: rgb(92, 25, 22);
+        }
        
         #footer {
 
-            color: rgb(117, 73, 50);
+            border: 4px solid rgb(156, 80, 8);
+            color: rgb(207, 167, 110);
             text-align: center;
-            background-color: rgb(176, 140, 119);
+            background-color: rgba(156, 80, 8);
             margin-top: auto;
             padding: 10px;
             font-size: 17px;
@@ -97,13 +145,13 @@
     <div id="wrapper">
 
         <!--HEADING-->
-        <div id="header" style="border: 4px solid rgb(176, 140, 119);">
+        <div id="header">
 
             <h1>Tanya Konan - SE111 - SUMMER 2023</h1>
             <h3>takonan@email.neit.edu</h3>
             
             <!--external link-->
-            <a href="https://www.neit.edu" target="_blank">Visit NEIT</a>
+            <a href="https://www.neit.edu" target="_blank" class="link2">Visit NEIT</a>
             <!--href attribute holds file path [REQUIRED]-->
             <!--target="_blank" open link in a new tab-->
 
@@ -116,35 +164,19 @@
         <!--NAVIGATION-->
         <div id="nav">
 
-            <a href="#w1"> WEEK 1 </a>
+            <a href="#w1" id="link"> WEEK 1 </a>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#w2" id="link"> WEEK 2 </a>
 
-            <a href="#w2"> WEEK 2 </a>
+            <a href="#w3" id="link"> WEEK 3 </a>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#w4" id="link"> WEEK 4 </a>
 
-            <a href="#w3"> WEEK 3 </a>
+            <a href="#w5" id="link"> WEEK 5 </a>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#w6" id="link"> WEEK 6 </a>
 
-            <a href="#w4"> WEEK 4 </a>
-
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
-
-            <a href="#footer">BOTTOM PAGE</a>
+            <a href="#footer" id="link"> BOTTOM </a>
 
         </div><!--#nav-->
         
@@ -153,10 +185,10 @@
         <br>
 
         <!--SCHOOLWORK-->
-        <div id="work">
+        <div id="work" class="bordy">
 
             <!--WEEK1-->
-            <div id="w1" style="border: 4px solid rgb(176, 140, 119);">
+            <div id="w1" class="inbordy">
 
                 <ul>
                     <li>
@@ -167,13 +199,13 @@
 
                             <li>
 
-                                <a href="w1_demo/index.html" target="_blank">Week 1 Demo</a>
+                                <a href="w1_demo/index.html" target="_blank" class="link2">Week 1 Demo</a>
 
                             </li>
 
                             <li>
 
-                                <a href="W1/index.html" target="_blank">Week 1 | First Webpage</a>
+                                <a href="W1/index.html" target="_blank" class="link2">Week 1 | First Webpage</a>
 
                             </li>
 
@@ -183,8 +215,11 @@
 
             </div><!--#w1-->
 
+            <br>
+            <br>
+
             <!--WEEK2-->
-            <div id="w2" style="border: 4px solid rgb(176, 140, 119);">
+            <div id="w2" class="inbordy">
 
                 <ul>
 
@@ -196,25 +231,25 @@
 
                             <li>
 
-                                <a href="w2_demo/index.html" target="_blank">Week 2 Demo</a>
+                                <a href="w2_demo/index.html" target="_blank" class="link2">Week 2 Demo</a>
 
                             </li>
 
                             <li>
 
-                                <a href="w2/file-paths-incorrect/index.html" target="_blank"> File Paths Incorrect </a>
+                                <a href="w2/file-paths-incorrect/index.html" target="_blank" class="link2"> File Paths Incorrect </a>
 
                             </li>
 
                             <li>
 
-                                <a href="w2/file-paths-correct/index.html" target="_blank"> File Paths Correct </a>
+                                <a href="w2/file-paths-correct/index.html" target="_blank" class="link2"> File Paths Correct </a>
 
                             </li>
 
                             <li>
 
-                                <a href="w2_bio/index.html" target="_blank"> Week 2 | Bio Page </a>
+                                <a href="w2_bio/index.html" target="_blank" class="link2"> Week 2 | Bio Page </a>
 
                             </li>
 
@@ -226,8 +261,11 @@
 
             </div><!--#w2-->
 
+            <br>
+            <br>
+
             <!--WEEK3-->
-            <div id="w3" style="border: 4px solid rgb(176, 140, 119);">
+            <div id="w3" class="inbordy">
 
                 <ul>
 
@@ -239,13 +277,13 @@
 
                             <li>
 
-                                <a href="w3_demo/index.html" target="_blank"> Week 3 Demo</a>
+                                <a href="w3_demo/index.html" target="_blank" class="link2"> Week 3 Demo</a>
 
                             </li>
 
                             <li>
 
-                                <a href="w3_bio/index.html" target="_blank"> Week 3 | Multi Page Bio</a>
+                                <a href="w3_bio/index.html" target="_blank" class="link2"> Week 3 | Multi Page Bio</a>
 
                             </li>
 
@@ -257,8 +295,11 @@
 
             </div><!--#w3-->
 
+            <br>
+            <br>
+
             <!--WEEK4-->
-            <div id="w4" style="border: 4px solid rgb(176, 140, 119);">
+            <div id="w4" class="inbordy">
 
                 <ul>
 
@@ -270,13 +311,13 @@
 
                             <li>
 
-                                <a href="w4_demo/index.html" target="_blank"> Week 4 Demo</a>
+                                <a href="w4_demo/index.html" target="_blank" class="link2"> Week 4 Demo</a>
 
                             </li>
 
                             <li>
 
-                                <a href="w4_movie/index.html" target="_blank"> Week 4 | Movie Site</a>
+                                <a href="w4_movie/index.html" target="_blank" class="link2"> Week 4 | Movie Site</a>
 
                             </li>
                             
@@ -289,8 +330,11 @@
 
             </div><!--#w4-->
 
+            <br>
+            <br>
+
             <!--WEEK5-->
-            <div id="w5" style="border: 4px solid rgb(176, 140, 119);">
+            <div id="w5" class="inbordy">
 
                 <ul>
 
@@ -302,13 +346,13 @@
 
                             <li>
 
-                                <a href="w5_demos/index.html" target="_blank">Week 5 Demos</a>
+                                <a href="w5_demos/index.html" target="_blank" class="link2">Week 5 Demos</a>
 
                             </li>
 
                             <li>
 
-                                <a href="w5_form_files/index.html" target="_blank">Week 5 |Tables and Forms</a>
+                                <a href="w5_form_files/index.html" target="_blank" class="link2">Week 5 |Tables and Forms</a>
                                 
                             </li>
 
@@ -320,51 +364,83 @@
 
             </div><!--#w5-->
 
+            <br>
+            <br>
+
            <!--WEEK6-->
-           <div id="w6" style="border: 4px solid rgb(176, 140, 119);">
+           <div id="w6" class="inbordy">
 
-            <ul>
+                <ul>
 
-                <li>
+                    <li>
 
-                    <h4><u>Week 6</u></h4>
+                        <h4><u>Week 6</u></h4>
 
-                    <ul>
+                        <ul>
 
-                        <li>
+                            <li>
 
-                            <a href="w6_demo/index.html" target="_blank">Week 6 Demos</a>
+                                <a href="w6_demo/index.html" target="_blank" class="link2">Week 6 Demos</a>
 
-                        </li>
+                            </li>
 
-                        <li>
+                            <li>
 
-                            <a href="w6/index.html" target="_blank">Week 6 | Javascript Pay Calculator</a>
-                            
-                        </li>
+                                <a href="w6/index.html" target="_blank" class="link2">Week 6 | Javascript Pay Calculator</a>
+                                
+                            </li>
 
-                    </ul>
+                        </ul>
 
-                </li>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div><!--#w6--> 
-        
-        
-        
+            </div><!--#w6--> 
+
+            <br>
+            <br>
+
+            <!--WEEK7-->
+            <div id="w7" class="inbordy">
+
+                <ul>
+
+                    <li>
+
+                        <h4><u>Week 7</u></h4>
+
+                        <ul>
+
+
+
+
+
+
+
+
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div><!--#w7-->
 
         </div><!--#work-->
 
+        <br>
+        <br>
         <hr>
 
-        <footer id="footer" style="border: 4px solid rgb(176, 140, 119);">
+        <footer id="footer">
 
             <p> &copy; Summer 2023 [202340] | SE111 - HTML & Javascript Class | T Konan</p>
 
             <br>
 
-            <a href="#header">Back to Top</a>
+            <a href="#header" id="link">Back to Top</a>
     
         </footer>
 
