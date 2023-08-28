@@ -9,8 +9,81 @@
 
     <title>Week 6 | Javascript Pay Calculator</title>
 
+    <style>
+
+        body{
+
+            background-image: url(images/uncle_sam.jpeg);
+
+        }
+
+        #wrapper{
+
+            text-align: center;
+
+            border: 10px solid rgba(0, 0, 0, 0.666) ;
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.666);
+
+            margin: 5%;
+            padding: 15%;
+            box-shadow:0 0 10px rgb(114, 114, 114);
+
+        }
+
+        
+
+    </style>
+
 </head>
+
 <body>
+
+    <!--WRAPPER-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+        <div id="header">
+
+            <h1><b>Pay Calculator</b></h1>
+
+            <br>
+
+            <h4 style="font-family: ariel; font-size: 15px;">Uncle Sam wants <b><i>YOU</i></b> to pay up</h4>
+        
+        </div><!--#header-->
+
+        <script>
+
+            alert(`Welcome to The Pay Caluculator\nPlease answer the following`)
+
+            var hourlyRate = Number(prompt(`What is your hourly rate?`))
+
+            var weekHours = Number(prompt(`How many hours do you work in a week?`))
+
+            var week2Hours = weekHours * 2
+
+            alert(`You work ${week2Hours} hours every 2 weeks`)
+
+            var taxRate = Number(prompt(`What is the tax rate in your state?\nNote: Please type in decimal form`))
+
+            var grossPay = (hourlyRate * week2Hours)
+
+            var uncleSamPay = taxRate * grossPay
+
+            var netPay = grossPay - uncleSamPay
+
+            console.log(`The Gross Pay: ${grossPay.toFixed(2)} `)
+
+            console.log(`Uncle Sam's Share: ${uncleSamPay.toFixed(2)} `)
+
+            console.log(`The Net Pay: ${netPay.toFixed(2)} `)
+
+            alert(`Thank you for the information provided\nHave a good day!`)
+
+        </script>
+
+    </div><!--#wrapper-->
     
 </body>
 </html>
