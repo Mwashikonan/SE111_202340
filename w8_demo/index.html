@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W8 | JS Data structure</title>
+
+</head>
+
+<body>
+
+    <h1>W8 JavaScript Demo | Arrays & Objects</h1>
+
+    <div id="output">
+        <!--eventally we will write info in here via JS  to display-->
+
+    </div>
+
+    <!--IN DOCUMENT JAVASCRIPT BELOW-->
+    <script>
+
+        //basic key + value pair --> variableName = dataValue
+        var name = `Tanya`
+        console.log(`Variable: ${name}`) //display value stored to simple var
+
+        //ARRAYS----------------------------------------------
+        //key --> [index], [i]
+
+        //create a new populated array
+        //to just create: var people = []
+        var people = [
+
+            `Katie`
+            `Toni`
+            `Dave`
+
+        ]
+
+        console.log(`Array: ${people}`) //entire collection of data
+        console.log(`First value of Array: ${people[0]}`) //one value within array
+        //arrayName[index] --> name + key = value
+
+        //you con store a single value back into var
+        var firstPerson = people[0]
+        console.log(`First person in array: ${firstPerson}`)
+
+        //add value to array, adds at end/nex index
+        //apend=push
+        people.push(`Brad`)
+        console.log(`Array: ${people}`) //entire collection of data
+
+        //another helpful native property for array types --> .length, reture # of items in an array object
+        console.log(`The length of the people array is: ${people.length}`)
+
+        //ask the user to add a name to array
+        people.push(prompt(`Enter a name for the array: `))
+        console.log(`Array: ${people}`) //entire collection of data
+
+        //PARALLEL ARRAY-------------------------------------------
+        //another 
+
+    </script>
+    
+</body>
+</html>
